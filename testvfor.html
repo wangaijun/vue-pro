@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul v-for="it in items">
+            <h3>{{$index}}:{{it.title}}</h3>
+            <p>{{it.description}}</p>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue"></script>    
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                items:[
+                    {title:"title_1",description:"description_1"},
+                    {title:"title_2",description:"description_2"},
+                    {title:"title_3",description:"description_3"},
+                    {title:"title_4",description:"description_4"},
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

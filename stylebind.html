@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" >
+        <div v-bind:style="alertStyle">
+            <p>hello,world!</p>
+        </div>
+        <div v-bind:style="{fontSize:alertStyle.fontSize,color:'blue'}">
+            <p>waj</p>
+        </div>
+        <div v-bind:style="[s1,s2]">
+            <p>lhj</p>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/vue"></script>    
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                alertStyle:{
+                    color:'red',
+                    fontSize:'20px'
+                },
+                s1:{
+                    color:'red',
+                },
+                s2:{
+                    fontSize:'20px'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

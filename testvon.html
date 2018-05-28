@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="say">说</button>
+        <button @click="say">说</button>
+        <button v-on:click="sayFrom">谁在说</button>
+        <button v-on:click="sayFrom($event)">谁在说</button>
+        <button v-on:click="sayFrom" v-on:click="say" >说，谁在说</button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>        
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                msg:'Hello,vue'
+            },
+            methods:{
+                say:function(){
+                    alert(this.msg)
+                },
+                sayFrom:function(ev){
+                    alert(ev)
+                }
+            }
+        })
+    </script>
+</body>
+</html>

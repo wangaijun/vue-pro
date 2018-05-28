@@ -1,0 +1,50 @@
+{
+    "tSpeakUrl": "http://openapi.youdao.com/ttsapi?q=%E5%8F%91%E5%87%BA&langType=zh-CHS&sign=12D119CA570C58BAAD2E5622BD2B36B1&salt=1527153507402&voice=4&format=mp3&appKey=6fe6f4309122ff9c",
+    "web": [
+        {
+            "value": [
+                "发出",
+                "放射",
+                "发射"
+            ],
+            "key": "emit"
+        },
+        {
+            "value": [
+                "发射结束时",
+                "操作器发射粒子的结束时间",
+                "结束时间"
+            ],
+            "key": "Emit Stop"
+        },
+        {
+            "value": [
+                "莱科尔特"
+            ],
+            "key": "Emit Rekkert"
+        }
+    ],
+    "query": "emit",
+    "translation": [
+        "发出"
+    ],
+    "errorCode": "0",
+    "dict": {
+        "url": "yddict://m.youdao.com/dict?le=eng&q=emit"
+    },
+    "webdict": {
+        "url": "http://m.youdao.com/dict?le=eng&q=emit"
+    },
+    "basic": {
+        "us-phonetic": "ɪ'mɪt",
+        "phonetic": "ɪ'mɪt",
+        "uk-phonetic": "ɪ'mɪt",
+        "uk-speech": "http://openapi.youdao.com/ttsapi?q=emit&langType=en&sign=492CE4DC7843D8E10EDD3E6D4B203317&salt=1527153507402&voice=4&format=mp3&appKey=6fe6f4309122ff9c",
+        "explains": [
+            "vt. 发出，放射；发行；发表"
+        ],
+        "us-speech": "http://openapi.youdao.com/ttsapi?q=emit&langType=en&sign=492CE4DC7843D8E10EDD3E6D4B203317&salt=1527153507402&voice=0&format=mp3&appKey=6fe6f4309122ff9c"
+    },
+    "l": "en2zh-CHS",
+    "speakUrl": "http://openapi.youdao.com/ttsapi?q=emit&langType=en&sign=492CE4DC7843D8E10EDD3E6D4B203317&salt=1527153507402&voice=4&format=mp3&appKey=6fe6f4309122ff9c"
+}

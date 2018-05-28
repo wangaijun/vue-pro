@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tab{
+            height: 100;
+            width: 100;
+            color: white;
+            font-size: 88pt;
+        }
+        .active{
+            background-color: blue;
+        }
+        .unactive{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="tab" v-bind:class="{'active' : active , 'unactive' : !active}">
+        <p>hello,world</p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>    
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                active:false,
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <template v-if="yes">
+            <p>There is first dom</p>
+            <p>There is second dom</p>
+            <p>There is third dom</p> 
+        </template>
+        <template v-for="it in items">
+            <p>{{it.name}}</p>
+            <p>{{it.desc}}</p>
+        </template>
+    </div>
+    
+    <script src="https://unpkg.com/vue"></script>        
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                yes:true,
+                items:[
+                    {name:"waj",desc:"good man"},
+                    {name:"lhj",desc:"other man"}]
+            }
+        })
+    </script>
+</body>
+</html>

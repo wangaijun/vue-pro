@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message"/>
+        <span>Your input is:{{message}}</span>
+        <label><input type="radio" value="male" v-model="gender"/>男</label>
+        <label><input type="radio" value="female" v-model="gender"/>女</label>
+        <p>{{gender}}</p>
+        <input type="checkbox" v-model="checked" />
+        <span>checked : {{ checked }}</span>
+        <label><input type="checkbox" value="1" v-model="multiChecked">1</lable>
+        <label><input type="checkbox" value="2" v-model="multiChecked">2</lable>
+        <label><input type="checkbox" value="3" v-model="multiChecked">3</lable>
+        <p>MultiChecked: {{ multiChecked.join('|') }}</p>
+        <select v-model="selected">
+            <option selected>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+        <select v-model="multiSelected" multiple>
+            <option selected>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <br>
+        <span>MultiSelected: {{ multiSelected.join('|') }}</span>
+    </div>
+    <script src="https://unpkg.com/vue"></script>    
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data:{
+                message:'',
+                gender:'',
+                checked : '',
+                multiChecked : [],
+                selected : '',
+                multiSelected : []
+            }
+        });
+    </script>
+</body>
+</html>
